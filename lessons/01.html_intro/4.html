@@ -1,0 +1,44 @@
+<div class="container">
+    <div class="row m-0 snippet">
+        <div class="col mx-auto">
+            <h2>Flexbox</h2>
+            <p>
+                Flexbox (Flexible Box, flex - elastyczny) jest to metoda dynamicznego i elastycznego pozycjonowania elementów. Metoda tawyparła metody omawiane wcześniej, takie jak sposób wyświetlania elementów blokowych (display:block), wpisanych (display:inline), wpisanych, ale zachowujących cechy elementów blokowych (display:inline-block), tabel czy pozycjonowania elementów (float, position absolute, position relative etc). Metoda flexbox pozwala na znacznie łatwiejsze i dające więcej możliwości stylowanie elementów HTML, ponadto nie trzeba stosować innych hacków i technik, takich jak clearfix.
+            </p>
+            <p>
+                Elementy, które mają być pozycjonowane tą metodą muszą znajdować się wewnątrz elementu rodzica (parent), który posiada właściwość <code>flex</code>. Spójrz na przykład:
+            </p>
+            <a class="jsbin-embed" href="http://jsbin.com/quwewuc/embed?html,css,output"></a>
+            <p>
+                Elementy dzieci (child) rodzica posiadającego właściwość <code>display:flex</code> stają się automatycznie elementami elastycznymi. Oznacza to, że będą one starały się wypełnić tak dużo miejsca w szerokości elementu rodzica jak to tylko możliwe. Wcześniej, używając właściwości <code>display:inline-block</code> musieliśmy ją wszystkim wszystkim elementom z osobna (co oczywiście robiliśmy za pomocą jednego selektora), które chcieliśmy aby wyświetlały się obok siebie. Tutaj wystarczy nadać właściwość tylko elementowi rodzicowi. Aby lepiej to zrozumieć wykonaj poniższe zadanie.
+            </p>
+            <h4>ZADANIE</h4>
+            <ol>
+                <li>Skopiuj parę razy element dziecko <code>&lt;div></code> (ten w który jest wpisana cyfra 1, 2, 3, obojętnie który), tak aby elementy nie mieściły się w szerokości zobacz co się stanie.</li>
+            </ol>
+            <h3 style="font-size: 16px; font-weight: bold">Wyjaśnienie</h3>
+            <p>
+                Wszystkie elementy dzieci elementu z klasą <code>flex-container</code> stały się elastyczne i jeśli jest ich zbyt dużo, to zmieniają swoją szerokość, ściskają się tak, by wszyskie mogły pomieścić się w wierszu. Jeśli chcemy aby elementy po dojściu do krawędzi nie zmnieniały swoich wymiarów, tylko ustawiały się od nowego wiersza to musimy na ich elemencie rodzicu zastosować właściwość <code>flex-wrap</code> z wartością <code>wrap</code>.
+            </p>
+            <h4>ZADANIE</h4>
+            <ol>
+                <li>Do klasy <code>flex-container</code> dopisz <code>flex-wrap:wrap</code></li>
+            </ol>
+            <p>
+                ⚠️ Pamiętaj, że element, któremu nadasz <code>display:flex</code>, przyjmuje domyślnie właściwość <code>flex-wrap</code> o wartości <code>no-wrap</code>. Dlatego na samym początku elementy ściskały się by zmieścić się w wierszu.
+            </p>
+            <p>
+                Kolejną wartością właśaciwości <code>flex-wrap</code> jest <code>wrap-reverse</code>. Działa ona w podobny sposób jak <code>wrap</code> z tą różnicą, że elementy zawijane są w odwrotnym (reverse) kierunku: do poprzedniego, górnego wiersza. Aby lepiej zrozumieć poniżej jest interaktywna animacja pokazująca jak układają się elementy, gdy rodzic posiadający właściwość <code>display:flex</code> (w tym przypadku pole z przerywaną linią) posiada różne właściwości <code>flex-wrap</code>.
+            </p>
+
+
+            <h4><a>flex-wrap</a> <small>( property of the flex container  )</small></h4>
+
+
+            <p data-height="500" data-theme-id="32665" data-slug-hash="bvawKQ" data-default-tab="result" data-user="drozumek" data-embed-version="2" data-pen-title="Flex-wrap" class="codepen"></p>
+
+
+        </div>
+    </div>
+</div>
+

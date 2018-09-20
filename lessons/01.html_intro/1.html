@@ -1,0 +1,308 @@
+<div class="container">
+    <div class="row m-0 mb-4">
+        <div class="col-12 mb-5">
+            <h2>Podstawowa struktura motywu</h2>
+        </div>
+        <div class="col-sm-8 col-xxl-5 text-column-xxl mb-xxl-1 text-justify mx-auto">
+            <p>
+                W katalogu <code><i class="fas fa-folder"></i>themes</code> utwórz katalog i nadaj mu nazwę, którą chcesz aby miał Twój nowy motyw. Żeby mieć lepszą orientację w dalszej części kursu, możesz go nazwać tak ja w kursie - <code ><i class="fas fa-folder"></i>supermotyw</code>. Będzie to nasz <strong>katalog główny motywu</strong>.
+            </p>
+            <p>
+                Pierwszym plikiem, który powinniśmy stworzyć jest plik ze stylami <code ><i class="far fa-file"></i>style.css</code>. Plik ten będzie zawierać m.in. niezbędne informacje, które pozwolą na poprawne wyświetlenie się naszego motywu w panelu administracyjnym Wordpressa w sekcji <span class="font-weight-bold">"Motywy"</span>.
+            </p>
+            <p>
+                Otwieramy terminal (<code class="code">ALT</code> + <code class="code">F12</code> w PhpStorm albo "View" > "Tool Windows" > "Terminal" ) i tworzymy plik za pomocą komendy <code class="code">touch style.css</code>
+            </p>
+        </div>
+        <div class="col-sm-8 col-xxl-6 offset-xxl-1">
+            <div class="window d-flex flex-column observe">
+                <div class="window__title-bar">
+                    <div class="window-icons"></div>
+                    <div class="window-icons"></div>
+                    <div class="window-icons"></div>
+                </div>
+                <div class="window__toolbar">
+                    <div class="window__arrows">
+                        <div class="arrow-icon"></div>
+                        <div class="arrow-icon arrow-forward"></div>
+                    </div>
+                    <div class="window__address-bar">
+                        <span>></span> root <span>></span> wp-content <span>></span> themes <span>></span> supermotyw
+                    </div>
+                </div>
+                <div class="window__interior d-flex h-100">
+                    <div class="window__sidebar">
+                        <ul class="list-group list-unstyled">
+                            <li><i class="fas fa-folder"></i>root</li>
+                            <li>
+                                <ul>
+                                    <li><i class="fas fa-folder"></i>wp-admin</li>
+                                    <li><i class="fas fa-folder-open"></i>wp-content</li>
+                                    <li>
+                                        <ul>
+                                            <li><i class="fas fa-folder"></i>plugins</li>
+                                            <li><i class="fas fa-folder-open"></i>themes</li>
+                                            <li>
+                                                <ul>
+                                                    <li><i class="fas fa-folder-open text-dark"></i>supermotyw</li>
+                                                    <li><i class="fas fa-folder"></i>twentyfifteen</li>
+                                                    <li><i class="fas fa-folder"></i>twentysixteen</li>
+                                                    <li><i class="fas fa-folder"></i>twentyseventeen</li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><i class="fas fa-folder"></i>wp-includes</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="window__content">
+                        <ul class="list-group list-unstyled">
+                            <li><i class="far fa-file"></i>style.css</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mb-150 w-100"></div>
+
+        <div class="col-12">
+            najprościej jeśli zrobimy to z poziomu konsoli. touch style.css, dodać filmik, camtasia, scrimba, modal. Dodac pozniej dzial jak dziala wordpress, ze np pluginy ladowane sa najpierw etc
+        </div>
+
+        <div class="mb-150 w-100"></div>
+
+        <div class="col-5">
+            <p class="mb-4">
+                W utworzonym pliku <code ><i class="far fa-file"></i>style.css</code> na wpisujemy jako komentarz <code>/* */</code> informacje o tworzonym przez nas motywie (po prawej komentarze z wyjaśnieniem, ich nie przepisujemy :) ):
+            </p>
+        </div>
+        <div class="col-sm-8 col-xxl-12">
+            <div class="window editor d-flex flex-column observe">
+                <div class="window__title-bar">
+                    <div class="window-icons"></div>
+                    <div class="window-icons"></div>
+                    <div class="window-icons"></div>
+                    <div class="mx-auto">Code Editor</div>
+                </div>
+                <div class="editor__tab-bar">
+                    <div class="editor__tab">
+                        style.css
+                    </div>
+                </div>
+                <div class="window__interior d-flex h-100">
+                    <div class="window__content">
+                        <ul class="list-group list-unstyled">
+                                        <pre class="language-css line-numbers mt-1"><code>/*
+Theme Name: Super Motyw wymagane             // Nazwa naszego motywu
+Theme URI:   wymagane                        // Adres strony na której można obejrzeć nasz motyw, na razie zostawmy puste
+Author: Damian Rozumek      wymagane          // Nazwa autora motywu, możesz wpisać nazwę swojej firmy lub imię i nazwisko
+Author URI:                          // Jeśli jako autor motywu masz swoją stronę internetową możesz ją tutaj podać
+Description: Świetny motyw dla firm wymagane  // Opis naszego motywu, który widoczny będzie w repozytorium motywów
+Version: alpha 0.1                   // Wersja naszego motywu, na razie dopiero go tworzymy, więc możemy wpisać np. 0.1
+License:                             // Licencja na jakiej udostępniany jest nasz motyw, na razie zostaw to pole puste
+Tags: clean, bootstrap, blog         // Tagi pod którymi będzie można znaleźć nasz motyw w repozytorium. Na razie pomiń
+*/</code></pre>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-8 col-xxl-5 text-column-xxl mb-xxl-1 text-justify mx-auto">
+            <p>
+                Wordpress pobierze z pliku <code ><i class="far fa-file"></i>style.css</code> informacje o naszym motywie i wyświetli je w panelu administratora (do czego potem dojdziemy).
+            </p>
+        </div>
+
+        <div class="mb-150 w-100"></div>
+
+        <div class="col-sm-8 col-xxl-5 text-column-xxl mb-xxl-1 text-justify mx-auto">
+            <p>
+                Teraz musimy stworzyć pliki
+            </p>
+            <ul>
+                <li>
+                    <code ><i class="far fa-file"></i>index.php</code>, który jest plikiem bazowym motywu, uruchamianym po tym jak ktoś wejdzie na naszą stronę, coś jak <code ><i class="far fa-file"></i>index.html</code> dla statycznej strony.
+                </li>
+                <li>
+                    <code ><i class="far fa-file"></i>header.php</code> - plik tworzący stopkę nagłówek motywu
+                </li>
+                <li>
+                    <code ><i class="far fa-file"></i>footer.php</code> - plik tworzący stopkę motywu
+                </li>
+            </ul>
+            <p>
+                <i class="fas fa-terminal mr-3"></i> <code class="code">touch index.php</code> <code class="code">touch header.php</code> <code class="code">touch footer.php</code>
+            </p>
+        </div>
+        <div class="col-sm-8 col-xxl-6 offset-xxl-1">
+            <div class="window d-flex flex-column observe">
+                <div class="window__title-bar">
+                    <div class="window-icons"></div>
+                    <div class="window-icons"></div>
+                    <div class="window-icons"></div>
+                </div>
+                <div class="window__toolbar">
+                    <div class="window__arrows">
+                        <div class="arrow-icon"></div>
+                        <div class="arrow-icon arrow-forward"></div>
+                    </div>
+                    <div class="window__address-bar">
+                        <span>></span> root <span>></span> wp-content <span>></span> themes <span>></span> supermotyw
+                    </div>
+                </div>
+                <div class="window__interior d-flex h-100">
+                    <div class="window__sidebar">
+                        <ul class="list-group list-unstyled">
+                            <li><i class="fas fa-folder-open text-dark"></i>supermotyw</li>
+                        </ul>
+                    </div>
+                    <div class="window__content">
+                        <ul class="list-group list-unstyled">
+                            <li class="highlight-animation" style="animation-delay: 3s; animation-iteration-count: infinite"><i class="far fa-file"></i>footer.php</li>
+                            <li class="highlight-animation" style="animation-delay: 3s; animation-iteration-count: infinite"><i class="far fa-file"></i>header.php</li>
+                            <li class="highlight-animation" style="animation-delay: 3s; animation-iteration-count: infinite"><i class="far fa-file"></i>index.php</li>
+                            <li><i class="far fa-file"></i>style.css</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-150 w-100"></div>
+
+        <div class="col-sm-8 col-xxl-5 text-column-xxl mb-xxl-1 text-justify mx-auto">
+            <p>
+                Zaczniemy od pliku <code ><i class="far fa-file"></i>header.php</code>. Tworzymy podstawową strukturę nagłówka dokumentu. Nie domykamy tagów <code>html</code> i <code>body</code>, zrobimy to w pliku stopki.
+            </p>
+        </div>
+        <div class="col-sm-8 col-xxl-6 offset-xxl-1">
+            <div class="window editor d-flex flex-column observe">
+                <div class="window__title-bar">
+                    <div class="window-icons"></div>
+                    <div class="window-icons"></div>
+                    <div class="window-icons"></div>
+                    <div class="mx-auto">Code Editor</div>
+                </div>
+                <div class="editor__tab-bar">
+                    <div class="editor__tab">
+                        header.php
+                    </div>
+                </div>
+                <div class="window__interior d-flex h-100">
+                    <div class="window__content">
+
+                        <pre class="language-markup line-numbers" style="overflow: visible"><code><!--<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nasz Supermotyw</title>
+</head>
+<body>
+--></code></pre>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-150 w-100"></div>
+
+        <div class="col-sm-8 col-xxl-5 text-column-xxl mb-xxl-1 text-justify mx-auto">
+            <p>
+                W pliku stopki <code><i class="far fa-file"></i>footer.php</code> domykamy tagi <code>html</code> i <code>body</code> a także dodajemy semantyczny tag <code>footer</code> wpisując tam przykładową treść oraz dodać. Możemy na początku dodać również tag <code>&lt;hr></code>, który oddzieli linią stopkę od reszty strony.
+            </p>
+        </div>
+        <div class="col-sm-8 col-xxl-6 offset-xxl-1">
+            <div class="window editor d-flex flex-column observe">
+                <div class="window__title-bar">
+                    <div class="window-icons"></div>
+                    <div class="window-icons"></div>
+                    <div class="window-icons"></div>
+                    <div class="mx-auto">Code Editor</div>
+                </div>
+                <div class="editor__tab-bar">
+                    <div class="editor__tab">
+                        footer.php
+                    </div>
+                </div>
+                <div class="window__interior d-flex h-100">
+                    <div class="window__content">
+                        <pre class="language-markup line-numbers"><code><!--<hr>
+<footer>
+    <p>To jest przykładowa treść naszej stopki</p>
+</footer>
+
+</body>
+</html>
+--></code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-150 w-100"></div>
+
+        <div class="col-sm-8 col-xxl-5 text-column-xxl mb-xxl-1 text-justify mx-auto">
+            <p>
+                W głównym pliku naszego motywu - <code><i class="far fa-file"></i>index.php</code> wpisujemy przykładową treść strony. Następnie w języku PHP dodajemy funkcje wordpressa, które dokleją do naszego dokumentu nagłówek i stopkę.
+            </p>
+            <p>
+                Funkcje <code class="code">get_header()</code> oraz <code class="code">get_footer()</code> są to natywne funkcje wordpressa i w miejscach w których występują umieszczona zostanie treść z plików odpowiednio <code ><i class="far fa-file"></i>header.php</code> oraz <code ><i class="far fa-file"></i>footer.php</code>. Pamiętamy, że PHP to język wykonywany po stronie serwera, więc odbiorca witryny zobaczy tylko wynik działania tych funkcji, tzn. treść nagłówka i stopki.
+            </p>
+        </div>
+        <div class="col-sm-8 col-xxl-6 offset-xxl-1">
+            <div class="window editor d-flex flex-column observe">
+                <div class="window__title-bar">
+                    <div class="window-icons"></div>
+                    <div class="window-icons"></div>
+                    <div class="window-icons"></div>
+                    <div class="mx-auto">Code Editor</div>
+                </div>
+                <div class="editor__tab-bar">
+                    <div class="editor__tab">
+                        index.php
+                    </div>
+                </div>
+                <div class="window__interior d-flex h-100">
+                    <div class="window__content">
+                        <pre class="language-clike line-numbers"><code><!--<?php get_header(); ?>--></code></pre>
+                        <pre class="language-markup line-numbers" data-start="2"><code><!--<h1>Witamy na stronie naszego supermotywu</h1>
+<p>Lorem ipsum</p>--></code></pre>
+                        <pre class="language-clike line-numbers" data-start="4"><code><!--<?php get_footer(); ?>--></code></pre>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-150 w-100"></div>
+
+        <div class="col-sm-8 col-xxl-5 text-column-xxl mb-xxl-1 text-justify mx-auto">
+            <p>
+                Teraz nasz motyw jest widoczny w panelu administacyjnym. Nie mamy dla niego jeszcze zdjęcia miniatury. Klikamy "Szczegóły Motywu" i widzimy, że okno informacyjne zawiera dane, które podaliśmy w pliku <code ><i class="far fa-file"></i>style.css</code>. Możemy teraz włączyć nasz motyw i zobaczyć jak działa.
+            </p>
+        </div>
+        <div class="col-sm-8 col-xxl-6 offset-xxl-1">
+            <img src="https://screenshotscdn.firefoxusercontent.com/images/361736ca-9e4a-4734-b8d1-f47bc363bbd8.png" height="auto" width="100%" alt="kokpit wordpressa z motywami">
+        </div>
+
+        <div class="mb-150 w-100"></div>
+
+        <div class="col-sm-8 col-xxl-5 text-column-xxl mb-xxl-1 text-justify mx-auto">
+            <p>
+                Jak widzisz wszystko jest bardzo proste, gdy przestrzega się wytycznych wordpressa tzn. nadawanie plikom odpowiednich nazw (np. <code><i class="far fa-file"></i>footer.php</code> zamiast np. stopka.php) i korzystanie z natywnych funkcji (np. <code class="code">get_header()</code>). Te funkcje w wordpressie nazywane są <strong>hakami</strong> (ang. hooks).
+            </p>
+            <p><strong>POPRWIC ZMIENIC, jest pare niescislosci</strong></p>
+            <p>
+                <strong>Haki</strong>, czyli akcje i filtry, to rozwiązanie, które pozwala nawet początkującemu programiście bezpiecznie modyfikować niemal każdą funkcjonalność Wordpressa bez dotykania jego kodu źródłowego. Dzięki hakom, aby pisać dodatki, pluginy, motywy do Wordpressa nie trzeba się uczyć skomplikowanego API czy być doświadczonym programistą PHP. Daje to znacznie niższy poziom wejścia dla nowych twórców, co jest właśnie siłą Wordpressa - ogromna społeczność oraz prostota systemu. Istnieją systemy, które są z technicznego punktu widzenia lepsze, bardziej zaawansowane od Wordpressa, ale ich trudność, wyższy poziom wejścia sprawia, że są mało popularne, mają znacznie mniejszą społeczność a tym samym dodatków, wsparcia, rozwiązań.
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
